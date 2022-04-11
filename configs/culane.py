@@ -71,7 +71,7 @@ dataset = dict(
     val=dict(
         type='CULane',
         img_path=dataset_path,
-        data_list='test.txt',
+        data_list='my_test.txt',
     ),
     test=dict(
         type='CULane',
@@ -81,7 +81,7 @@ dataset = dict(
 )
 
 
-workers = 12
+workers = 2
 num_classes = 4 + 1
 ignore_label = 255
 log_interval = 500

@@ -7,19 +7,8 @@
 #include <opencv2/core/version.hpp>
 #include <opencv2/core/core.hpp>
 
-#if CV_VERSION_EPOCH == 2
-#define OPENCV2
-#elif CV_VERSION_MAJOR == 3
-#define  OPENCV3
-#else
-#error Not support this OpenCV version
-#endif
 
-#ifdef OPENCV3
-#include <opencv2/imgproc.hpp>
-#elif defined(OPENCV2)
 #include <opencv2/imgproc/imgproc.hpp>
-#endif
 
 using namespace std;
 using namespace cv;

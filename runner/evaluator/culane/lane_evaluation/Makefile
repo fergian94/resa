@@ -3,7 +3,7 @@ PROJECT_NAME:= evaluate
 # config ----------------------------------
 OPENCV_VERSION := 3
 
-INCLUDE_DIRS := include
+INCLUDE_DIRS := include /usr/local/include/opencv4
 LIBRARY_DIRS := lib /usr/local/lib
 
 COMMON_FLAGS := -DCPU_ONLY
